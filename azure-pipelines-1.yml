@@ -23,8 +23,8 @@ jobs:
   - task: CmdLine@2
     displayName: Check Cypress Installed
     inputs:
-      script: &gt;
-        npx cypress verify
+      workingDirectory: $(System.DefaultWorkingDirectory)
+      script: npx cypress verify
  
  
 - job: Job_2
